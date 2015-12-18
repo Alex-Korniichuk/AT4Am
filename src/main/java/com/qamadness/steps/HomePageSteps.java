@@ -29,7 +29,7 @@ public class HomePageSteps extends ScenarioSteps {
 
 
     @Step
-    public void Click_add_new_address_btn() {homePage.Click_add_new_address_btn();}
+    public void Click_add_new_address_btn() {homePage.click_add_new_address_btn();}
 
     @Step
     public void input_in_search_field(){homePage.input_in_search();}

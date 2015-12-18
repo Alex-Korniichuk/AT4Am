@@ -17,8 +17,6 @@ import org.openqa.selenium.interactions.Actions;
 @DefaultUrl("https://www.amazon.com/")
 public class HomePage extends PageObject{
 
-
-
     @FindBy (xpath = ".//*[@id='nav-your-amazon']")
     WebElementFacade yourAmazonLink;
     public void click_your_Amazon_Link() {yourAmazonLink.click();}
@@ -40,11 +38,9 @@ public class HomePage extends PageObject{
     WebElementFacade manage_profile;
     public void click_manage_adress() {manage_profile.click();}
 
-
-
     @FindBy (xpath = ".//*[@id='iux-address-book']/div[1]/div[1]/a/span")
     WebElementFacade click_add_new_address;
-    public void Click_add_new_address_btn() {click_add_new_address.click();}
+    public void click_add_new_address_btn() {click_add_new_address.click();}
 
     @FindBy (xpath = ".//*[@id='twotabsearchtextbox']")
     WebElementFacade serch_field;
@@ -62,8 +58,6 @@ public class HomePage extends PageObject{
     WebElementFacade product_link;
     public void open_some_product() {product_link.click();}
 
-
-
     public void hover_shop_by_department_link() {
         WebElement categoryLink = getDriver().findElement(By.xpath(".//*[@id='nav-link-shopall']"));
         Actions action = new Actions(getDriver());
@@ -74,8 +68,6 @@ public class HomePage extends PageObject{
         action.click();
         action.perform();
     }
-
-
 
     @FindBy (xpath = ".//*[@id='shopAllLinks']/tbody/tr/td[2]/div[5]/ul/li[4]/a")
     WebElement cell_phones_link;
@@ -88,15 +80,5 @@ public class HomePage extends PageObject{
     @FindBy (xpath = ".//*[@id='ref_2528832011']/li[4]/a/span[1]")
     WebElement choose_only_Nokia;
     public void click_apple_checkbox() {choose_only_Nokia.click();}
-
-
-
-
-
-
-
-
-
-
 
 }
